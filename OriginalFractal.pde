@@ -37,3 +37,9 @@ public void myFractal(int x, int y, int size) {
     myFractal(x+size/4, y, size/2);
   }
 }
+
+/*
+SOURCES:
+https://keyvan.net/2009/09/processing-getting-started/
+http://btk.tillnagel.com/tutorials/rotation-translation-matrix.html
+*/
