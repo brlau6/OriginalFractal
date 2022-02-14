@@ -1,34 +1,42 @@
 public void setup() {
   size(500, 500);
   frameRate(10);
-  //noLoop();
+  strokeWeight(0.5);
 }
 public void draw() {
   background(0);
   //myFractal(250, 250, 100);
   
+  fill(255, 112, 203);
+  textSize(20);
+  text("Happy Valentines' Day! <3",40,50);
+  
   //set center of rotation to middle of screen
   translate(250, 250);
-  flower(150,30,0);
+  flower(150,30);//middle
   //all subsequent translations add onto each other
   translate(0, -150);
-  flower(50,20,0);
+  flower(50,20);//upper left
   translate(-100, 300);
-  flower(70,40,0);
+  flower(70,40);//upper right
+  translate(200,75);
+  flower(100,10);//bottom right
+  translate(-150,-325);
+  flower(90,25);//bottom left
 }
-public void flower(float size, int angle, int density) {
+public void flower(float size, int angle) {
   // draw 5 petals, rotating after each one
   //fill((float)Math.random()*255,(float)Math.random()*255,(float)Math.random()*255);
-  fill(255,(float)Math.random()*155,(float)Math.random()*255);
+  fill(255,(float)Math.random()*50,(float)Math.random()*255);
   for (int i = 0; i < 360/angle; i++) {
-    ellipse(0, 30+mouseY/5, size/3, size);
+    ellipse(0, mouseY/4, size/3, size);
     rotate(radians(angle));
   }
   if(size > 10){
-    flower(size/2,angle-2,density+10); 
+    flower(size/2,angle-2); 
   }
 }
-//BASIC THING
+//Basic circle fractal
 public void myFractal(int x, int y, int size) {
   ellipse(x, y, size, size/2);
   //stroke((float)Math.random()*255,(float)Math.random()*255,(float)Math.random()*255);
@@ -37,7 +45,6 @@ public void myFractal(int x, int y, int size) {
     myFractal(x+size/4, y, size/2);
   }
 }
-
 /*
 SOURCES:
 https://keyvan.net/2009/09/processing-getting-started/
