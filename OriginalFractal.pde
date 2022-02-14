@@ -2,8 +2,6 @@ public void setup() {
   size(500, 500);
   frameRate(10);
   //noLoop();
-  //ellipseMode(CENTER);
-  fill(255);
 }
 public void draw() {
   background(0);
@@ -13,10 +11,10 @@ public void draw() {
   translate(250, 250);
   flower(150,30,0);
   //all subsequent translations add onto each other
-  translate(-100, -150);
+  translate(0, -150);
   flower(50,20,0);
-  translate(0, 150);
-  flower(50,10,0);
+  translate(-100, 300);
+  flower(70,40,0);
 }
 public void flower(float size, int angle, int density) {
   // draw 5 petals, rotating after each one
