@@ -14,14 +14,23 @@ public void draw() {
   //set center of rotation to middle of screen
   translate(250, 250);
   flower(150,30);//middle
+  translate(-250,-250);
+  
   //all subsequent translations add onto each other
-  translate(0, -150);
+  //unless you reverse translate
+  translate(80, 150);
   flower(50,20);//upper left
-  translate(-100, 300);
+  translate(-80,-150);
+  
+  translate(300, 100);
   flower(70,40);//upper right
-  translate(200,75);
+  translate(-300, -100);
+  
+  translate(350,350);
   flower(100,10);//bottom right
-  translate(-150,-325);
+  translate(-350,-350);
+  
+  translate(100,400);
   flower(90,25);//bottom left
 }
 public void flower(float size, int angle) {
