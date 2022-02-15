@@ -22,6 +22,7 @@ public void draw() {
   flower(50,20);//upper left
   translate(-80,-150);
   
+  /*
   translate(300, 100);
   flower(70,40);//upper right
   translate(-300, -100);
@@ -32,6 +33,7 @@ public void draw() {
   
   translate(100,400);
   flower(90,25);//bottom left
+  */
 }
 public void flower(float size, int angle) {
   // draw 5 petals, rotating after each one
