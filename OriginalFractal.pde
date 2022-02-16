@@ -25,7 +25,7 @@ public void draw() {
   translate(300, 100);
   flower(70,40);//upper right
   translate(-300, -100);
-  */
+  /*
   translate(350,350);
   flower(100,10);//bottom right
   translate(-350,-350);
