@@ -18,9 +18,9 @@ public void draw() {
   
   //all subsequent translations add onto each other
   //unless you reverse translate
-  translate(80, 150);
+  translate(80, 175);
   flower(50,20);//upper left
-  translate(-80,-150);
+  translate(-80,-175);
   
   /*
   translate(300, 100);
@@ -32,7 +32,7 @@ public void draw() {
   translate(-350,-350);
   
   translate(100,400);
-  flower(90,25);//bottom left
+  flower(90,24);//bottom left
   */
 }
 public void flower(float size, int angle) {
