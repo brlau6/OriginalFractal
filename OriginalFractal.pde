@@ -41,7 +41,6 @@ public void flower(float size, int angle) {
   for (int i = 0; i <= 360/angle; i++) {
     rotate(radians(angle));
     ellipse(0, mouseY/4, size/3, size);
-    rotate(radians(-1*angle));
   }
   if(size > 10){
     flower(size/2,angle-2); 
