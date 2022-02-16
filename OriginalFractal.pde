@@ -39,8 +39,9 @@ public void flower(float size, int angle) {
   //fill((float)Math.random()*255,(float)Math.random()*255,(float)Math.random()*255);
   fill(255,(float)Math.random()*50,(float)Math.random()*255);
   for (int i = 0; i <= 360/angle; i++) {
-    ellipse(0, mouseY/4, size/3, size);
     rotate(radians(angle));
+    ellipse(0, mouseY/4, size/3, size);
+    rotate(radians(-1*angle));
   }
   if(size > 10){
     flower(size/2,angle-2); 
