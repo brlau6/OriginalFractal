@@ -17,16 +17,15 @@ public void draw() {
   translate(-250,-250);
   
   //all subsequent translations add onto each other
-  //unless you reverse translate
+  //unless you reverse translate?
   translate(80, 200);
   flower(50,20);//upper left
   translate(-80,-200);
   
-  /*
   translate(300, 100);
   flower(70,40);//upper right
   translate(-300, -100);
-  
+  */
   translate(350,350);
   flower(100,10);//bottom right
   translate(-350,-350);
