@@ -22,9 +22,9 @@ public void draw() {
   flower(50,20);//upper left
   translate(-80,-200);
   
-  translate(300, 100);
+  translate(400, 80);
   flower(70,40);//upper right
-  translate(-300, -100);
+  translate(-400, -80);
   /*
   translate(350,350);
   flower(100,10);//bottom right
